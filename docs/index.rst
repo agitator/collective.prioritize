@@ -1,0 +1,5 @@
+====================
+collective.prioritize
+====================
+
+User documentation
