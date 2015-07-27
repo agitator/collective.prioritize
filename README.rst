@@ -6,33 +6,7 @@
 collective.prioritize
 ==============================================================================
 
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+Adds fields for duration and level of prioritization for content items.
 
 
 Installation
@@ -57,13 +31,6 @@ Contribute
 - Issue Tracker: https://github.com/collective/collective.prioritize/issues
 - Source Code: https://github.com/collective/collective.prioritize
 - Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License

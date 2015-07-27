@@ -11,6 +11,12 @@
 
   <include package=".browser" />
 
+  <include file="behavior.zcml" />
+
+  <include file="indexer.zcml" />
+
+  <include file="vocabulary.zcml" />
+
 
   <genericsetup:registerProfile
       name="default"

@@ -1,0 +1,12 @@
+<configure
+
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.prioritize">
+
+  <adapter name="prioritization_start" factory=".indexer.prioritization_start" />
+  <adapter name="prioritization_end" factory=".indexer.prioritization_end" />
+  <adapter name="prioritization_level" factory=".indexer.prioritization_level" />
+
+</configure>

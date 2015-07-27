@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+
+  <index name="prioritization_start"
+         meta_type="DateIndex">
+    <indexed_attr value="prioritization_start"/>
+  </index>
+
+  <index name="prioritization_end"
+         meta_type="DateIndex">
+    <indexed_attr value="prioritization_end"/>
+  </index>
+
+  <index name="prioritization_level"
+         meta_type="FieldIndex">
+    <indexed_attr value="prioritization_level"/>
+  </index>
+
+</object>
