@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,7 +12,7 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.prioritize\n"
+"Domain: DOMAIN\n"
 
 #: ../profiles/default/registry.xml
 msgid "Text"
@@ -24,32 +21,32 @@ msgstr ""
 #. Default: "End of content prioritization"
 #: ../behavior.py:36
 msgid "help_prioritization_end"
-msgstr ""
+msgstr "Ende der Inhalts-Priorisierung"
 
 #. Default: "Start of content prioritization"
 #: ../behavior.py:27
 msgid "help_prioritization_start"
-msgstr ""
+msgstr "Start der Inhalts-Priorisierung"
 
 #. Default: "High"
 #: ../vocabulary.py:11
 msgid "high"
-msgstr ""
+msgstr "Hoch"
 
 #. Default: "Prioritization End Date"
 #: ../behavior.py:35
 msgid "label_prioritization_end"
-msgstr ""
+msgstr "Ende der Priorisierung"
 
 #. Default: "Prioritization Level"
 #: ../behavior.py:44
 msgid "label_prioritization_level"
-msgstr ""
+msgstr "Priorisierungsstufe"
 
 #. Default: "Prioritization Start Date"
 #: ../behavior.py:26
 msgid "label_prioritization_start"
-msgstr ""
+msgstr "Start der Priorisierung"
 
 #. Default: "Dates"
 #: ../behavior.py:20
@@ -59,14 +56,14 @@ msgstr ""
 #. Default: "Medium"
 #: ../vocabulary.py:12
 msgid "medium"
-msgstr ""
+msgstr "Mittel"
 
 #. Default: "Normal"
 #: ../vocabulary.py:13
 msgid "normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../profiles/default/registry.xml
 msgid "prioritization_level"
-msgstr ""
+msgstr "Priorisierungsstufe"
 
