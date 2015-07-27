@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-07-27 14:13+0000\n"
+"POT-Creation-Date: 2015-07-27 14:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: ../profiles/default/registry.xml
+msgid "Dates"
+msgstr ""
 
 #: ../profiles/default/registry.xml
 msgid "Text"
@@ -64,6 +68,14 @@ msgid "normal"
 msgstr "Normal"
 
 #: ../profiles/default/registry.xml
+msgid "prioritization_end"
+msgstr "Priorisierung-Ende"
+
+#: ../profiles/default/registry.xml
 msgid "prioritization_level"
 msgstr "Priorisierungsstufe"
+
+#: ../profiles/default/registry.xml
+msgid "prioritization_start"
+msgstr "Priorisierung-Start"
 
