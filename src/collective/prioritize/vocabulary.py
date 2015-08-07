@@ -8,9 +8,9 @@ from zope.interface import provider
 @provider(IVocabularyFactory)
 def PrioritizationLevelsVocabulary(context):
     prioritization_levels = [
-        ('high', _('high', default=u'High')),
-        ('medium', _('medium', default=u'Medium')),
-        ('normal', _('normal', default=u'Normal')),
+        ('1', _('high', default=u'High')),
+        ('2', _('medium', default=u'Medium')),
+        ('3', _('normal', default=u'Normal')),
     ]
     terms = [SimpleTerm(term, term, title=label)
              for term, label in prioritization_levels]

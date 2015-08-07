@@ -23,4 +23,6 @@ def prioritization_level(obj):
     ob = IContentPriority(obj, None)
     if ob is None:
         return None
-    return ob.prioritization_level
+    if obj.prioritization_level:
+        return ob.prioritization_level
+    return '99'

@@ -16,11 +16,19 @@ class IContentPriority(model.Schema):
     """
 
     model.fieldset(
-        'dates',
+        'categorization',
         label=_(u'label_schema_dates', default=u'Dates'),
         fields=['prioritization_start', 'prioritization_end',
                 'prioritization_level'],
     )
+
+    prioritization_level = schema.Choice(
+        title=_(u'label_prioritization_level', default=u'Prioritization Level'),
+        vocabulary='collective.prioritize.PrioritizationLevels',
+        required=False,
+        missing_value='',
+    )
+    directives.widget('prioritization_level', SelectFieldWidget)
 
     prioritization_start = schema.Datetime(
         title=_(u'label_prioritization_start', u'Prioritization Start Date'),
@@ -40,14 +48,6 @@ class IContentPriority(model.Schema):
     )
     directives.widget('prioritization_end', DatetimeFieldWidget)
 
-    prioritization_level = schema.Choice(
-        title=_(u'label_prioritization_level', default=u'Prioritization Level'),
-        vocabulary='collective.prioritize.PrioritizationLevels',
-        required=False,
-        missing_value='',
-    )
-    directives.widget('prioritization_level', SelectFieldWidget)
-
 
 @implementer(IContentPriority)
 class ContentPriority(object):
@@ -56,6 +56,14 @@ class ContentPriority(object):
 
     def __init__(self, context):
         self.context = context
+
+    @property
+    def prioritization_level(self):
+        return getattr(self.context, '_prioritization_level', None)
+
+    @prioritization_level.setter
+    def prioritization_level(self, value):
+        self.context._prioritization_level = value
 
     @property
     def prioritization_start(self):
@@ -72,11 +80,3 @@ class ContentPriority(object):
     @prioritization_end.setter
     def prioritization_end(self, value):
         self.context._prioritization_end = value
-
-    @property
-    def prioritization_level(self):
-        return getattr(self.context, '_prioritization_level', None)
-
-    @prioritization_level.setter
-    def prioritization_level(self, value):
-        self.context._prioritization_level = value
