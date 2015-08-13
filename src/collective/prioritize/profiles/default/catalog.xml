@@ -16,4 +16,8 @@
     <indexed_attr value="prioritization_level"/>
   </index>
 
+  <index name="prioritizationEffective" meta_type="DateRangeIndex"
+    since_field="prioritization_start" until_field="prioritization_end"/>
+
+
 </object>
